@@ -14,7 +14,6 @@ def generate_first_set_of_birthdays():
 # Outputs:
 #            date_strings - list of randomly generated birthdays as strings
 #
-
     print('Hello!\n')
     while True:
         num_birthdays = input('How many birthdays would you like me to generate?\n')
@@ -41,7 +40,6 @@ def create_list_of_days(list_of_months):
 # Outputs:
 #            list_of_days - int list of days corresponding to each month
 #
-
     list_of_days = []
     for x in list_of_months:
         if x in [1, 3, 5, 7, 8, 10, 12]:
@@ -66,8 +64,6 @@ def return_random_dates_as_strings(list_of_months, list_of_days):
 # Outputs:
 #            date_strings - list of dates saved as strings
 #
-    
-    
     months = ['January',
               'February',
               'March',
@@ -97,7 +93,6 @@ def create_random_dates(num_birthdays):
 # Outputs:
 #            date_strings - list of dates saved as strings
 #
-    
     list_of_months = [random.randint(1,12) for i in range(num_birthdays)]
     list_of_days = create_list_of_days(list_of_months)
     date_strings = return_random_dates_as_strings(list_of_months, list_of_days)
@@ -115,7 +110,6 @@ def sum_identical_birthdays(date_strings):
 # Outputs:
 #            len(common_birthdays) - number of birthdays shared by 2 or more people in date_strings
 #
-    
     common_birthdays = set(i for i in date_strings if date_strings.count(i) >  1)
     return len(common_birthdays)
 
@@ -132,7 +126,6 @@ def monte_carlo(birthdays):
 # Outputs:
 #            none
 #
-    
     num_birthdays = len(birthdays)
     print('Generating {} birthdays 100,000 times.'.format(num_birthdays))
     input('Press Enter to begin...')
