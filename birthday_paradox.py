@@ -4,6 +4,8 @@ import random
     
 def generate_first_set_of_birthdays():
 # create_random_birthdays()
+# Used by: main
+# Functions used: create_random_dates(birthdays)
 # 
 # Objective: 
 #            Creates a list of randomly generated birthdays of n length. n is a
@@ -30,6 +32,8 @@ def generate_first_set_of_birthdays():
 
 def create_list_of_days(list_of_months):
 # def create_list_of_days
+# Used by: create_random_dates(num_birthdays)
+# Uses: none
 #
 # Objective:
 #            Generate a list of randomly generated days (as ints) of the month based on the month of the year
@@ -53,6 +57,8 @@ def create_list_of_days(list_of_months):
 
 def return_random_dates_as_strings(list_of_months, list_of_days):
 # def return_random_dates_as_strings
+# Used by: create_random_dates(num_birthdays)
+# Uses: none
 #
 # Objective:
 #            Combine int lists of months and days into a string list of dates
@@ -83,6 +89,8 @@ def return_random_dates_as_strings(list_of_months, list_of_days):
         
 def create_random_dates(num_birthdays):
 # def create_random_dates(num_birthdays)
+# Used by: generate_first_set_of_birthdays(),monte_carlo(birthdays)
+# Uses: creatE_list_of_days(list_of_months), return_random_dates_as_strings(list_of_months, list_of_days)
 #
 # Objective:
 #            Takes a number n and generates a string list of dates n long
@@ -100,6 +108,8 @@ def create_random_dates(num_birthdays):
         
 def sum_identical_birthdays(date_strings):
 # def sum_identical_birthdays(date_strings)
+# Used by: monte_carlo(birthdays), main
+# Uses: none
 #
 # Objective:
 #            Return number of birthdays shared by 2 or more people in date_strings
@@ -115,6 +125,8 @@ def sum_identical_birthdays(date_strings):
 
 def monte_carlo(birthdays):
 # def monte_carlo
+# Used by: main
+# Uses: create_random_dates(num_birthdays), sum_identical_birthdays(date_strings)
 #
 # Objective:
 #            Create 100,000 Monte Carlo (MC) runs of the randomly generated birthday list to 
