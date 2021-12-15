@@ -21,10 +21,14 @@ Created on Sun Dec 12 23:26:33 2021
 # Dealer has 2 cards, 1 face up and one face down
 # Player has two cards that can be seen. Player can choose to hit, stay, or double down
 
-# Card deck class
 # Create card deck module 
-# Each card has a status: either played or still in the deck
-# method to draw random card
+    # card deck class
+    # Each card has a status: either played or still in the deck
+    # method to draw random card
+    
+    # card deck rendering function
+    # take in card values
+    # can render cards in a 1x1 or 2x1 space
 
 # player class
 # Properties:
@@ -42,6 +46,7 @@ Created on Sun Dec 12 23:26:33 2021
     # A sum of money much greater than the player's sum
 # Methods:
     # Draw cards from card deck until limit is reached (17)
+    
     
 # Control game flow
 # decides what actions are taken and when
