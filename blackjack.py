@@ -29,6 +29,9 @@ Created on Sun Dec 12 23:26:33 2021
     # card deck rendering function
     # take in card values
     # can render cards in a 1x1 or 2x1 space
+    
+    # UPDATE: card deck modules exist. Encountering difficulty using in standalone Spyder as it is not recognizing these newly installed packages
+    # May revert back to creating my own module
 
 # player class
 # Properties:
