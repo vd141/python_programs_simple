@@ -4,6 +4,8 @@ Created on Sun Dec 12 23:26:33 2021
 
 @author: victo
 """
+# 12/20/2021: putting this back on the shelf for now. Exploring generative art
+
 
 # Blackjack
 # 52 cards in a deck, 4 suites, 13 cards each
